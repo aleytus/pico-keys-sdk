@@ -31,7 +31,7 @@ if (NOT PICO_SDK_PATH)
         endif ()
         FetchContent_Declare(
                 pico_sdk
-                GIT_REPOSITORY https://github.com/raspberrypi/pico-sdk
+                GIT_REPOSITORY https://github.com/aleytus/pico-sdk
                 GIT_TAG master
         )
         if (NOT pico_sdk)

@@ -126,7 +126,7 @@ if(NOT ESP_PLATFORM)
     )
 
     if(ENABLE_EDDSA)
-        set(MBEDTLS_ORIGIN "https://github.com/polhenarejos/mbedtls.git")
+        set(MBEDTLS_ORIGIN "https://github.com/aleytus/mbedtls.git")
         set(MBEDTLS_REF "mbedtls-3.6-eddsa")
 
         execute_process(
@@ -148,7 +148,7 @@ if(NOT ESP_PLATFORM)
         add_definitions(-DMBEDTLS_ECP_DP_ED25519_ENABLED=1 -DMBEDTLS_ECP_DP_ED448_ENABLED=1 -DMBEDTLS_EDDSA_C=1 -DMBEDTLS_SHA3_C=1)
 
     else()
-        set(MBEDTLS_ORIGIN "https://github.com/Mbed-TLS/mbedtls.git")
+        set(MBEDTLS_ORIGIN "https://github.com/aleytus/mbedtls.git")
         set(MBEDTLS_REF "v3.6.5")
 
         execute_process(
